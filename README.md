@@ -1,69 +1,14 @@
-# React + TypeScript + Vite
+# Hexatrip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans le projet "Hextrip". Ce projet est une agence de voyages en ligne, accessible à tous.
 
-Currently, two official plugins are available:
+Ce projet a été réalisé grâce à la formation de Hadley Videlier, dans le cadre de sa formation "MERN Fullstack". Malgré tout, il a tout de même été re-codé à la main, par Shadow. Ce projet permet de pouvoir développer de nombreuses compétences dans le monde du Fullstack (MongoDB, Express, React, Node).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Celui-ci a été une très belle découverte pour moi-même : n’ayant jamais touché à du Javascript sans l’IA, j’ai réussi à développer de bonnes pratiques (telles que les fonctions async avec try/catch...). Ce projet me permettra sûrement une bonne expérience. Malgré certaines vidéos parfois complexes pour les novices, avec du temps et de la patience, ceci est complètement réalisable.
 
-## Expanding the ESLint configuration
+C’est pour cela que je souhaite pleinement remercier le formateur, de ce superbe cours !
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Statut
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Ce projet est actuellement en cours de réalisation, et contient uniquement le frontend de l'application.
+Vous pouvez dès à présent consulter le backend, via le lien suivant : https://github.com/shadow-developper/hexatrip-backend
