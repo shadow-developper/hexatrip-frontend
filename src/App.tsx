@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <div>Lorem ipsum dolor sit amet.</div>
+    <div className="font-bold">Lorem ipsum dolor sit amet.</div>
   );
 };
 
