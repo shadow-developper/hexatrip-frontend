@@ -1,6 +1,12 @@
+import { Button } from "./ui/button";
+
 const UserBar = () => {
   return (
-	<div>UserBar</div>
+	<div>
+    <Button>
+        click me
+    </Button>
+  </div>
   )
 }
 
