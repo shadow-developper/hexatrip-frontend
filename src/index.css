@@ -21,6 +21,9 @@ body {
   .align-center {
     @apply max-w-6xl mx-auto px-8;
   }
+  .hover-btn{
+    @apply cursor-pointer;
+  }
 } 
 
 @theme inline {
