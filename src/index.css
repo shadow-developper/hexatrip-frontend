@@ -17,12 +17,20 @@ body {
   .test {
     @apply border-solid border-2;
   }
-
+  .bordered {
+    @apply border-solid border-2 transform-none border-inherit;
+  }
   .align-center {
     @apply max-w-6xl mx-auto px-8;
   }
   .hover-btn{
     @apply cursor-pointer;
+  }
+  .hover-btn:hover {
+    @apply text-amber-600
+  }
+  .hover-btn:hover > .bordered {
+    @apply border-solid border-2  border-amber-600;
   }
 } 
 

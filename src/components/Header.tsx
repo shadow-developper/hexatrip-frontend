@@ -4,32 +4,32 @@ import { ContactRound, MapPinHouse, Phone, UserRound } from "lucide-react";
 
 const Header = () => {
   return (
-	<header className="">
-    <div className="">
-      <div className="">
-        <Link to="/" className="">
-          <div className="">
-            <img src={logo} alt=""></img>
+	<header className="w-full text-sky-700">
+    <div className="align-center h-full flex flex-col md:flex-row justify-between items-center">
+      <div className="h-full place-content-center">
+        <Link to="/" className="flex items-center hover-btn">
+          <div className="h-20 w-20">
+            <img src={logo} alt="Brand logo" className="w-full h-full rounded-full object-cover"></img>
           </div>
-          <p className="">HexaTrip</p>
+          <p className="font-special text-6xl mr-auto ml-2">HexaTrip</p>
         </Link>
       </div>
-      <div className="">
-        <Link to="/agencies" className="">
-            <MapPinHouse size="" className=""/>
-            <p className="">Our agencies</p>
+      <div className="self-end h-full flex justify-between items-center gap-3 mx-auto md: mr-0">
+        <Link to="/agencies" className="flex flex-col items-center hover-btn">
+            <MapPinHouse size="45" className="bordered rounded-full p-2"/>
+            <p className="text-[0.7rem] w-max-[2]">Our agencies</p>
         </Link>
-        <Link to="/advisors" className="">
-            <UserRound size="" className=""/>
-            <p className="">Our advisors</p>
+        <Link to="/advisors" className="flex flex-col items-center hover-btn">
+            <UserRound size="45" className="bordered rounded-full p-2"/>
+            <p className="text-[0.7rem] w-max-[2]">Our advisors</p>
         </Link>
-        <Link to="/hotline" className="">
-            <Phone size="" className=""/>
-            <p className="">+33301254876</p>
+        <Link to="/hotline" className="flex flex-col items-center hover-btn">
+            <Phone size="45" className="bordered rounded-full p-2"/>
+            <p className="text-[0.7rem] w-max-[2]">+33301254876</p>
         </Link>
-        <Link to="/profile" className="">
-            <ContactRound size="" className=""/>
-            <p className="">Your account</p>
+        <Link to="/profile" className="flex flex-col items-center hover-btn">
+            <ContactRound size="45" className="bordered rounded-full p-2"/>
+            <p className="text-[0.7rem] w-max-[2]">Your account</p>
         </Link>
       </div>
     </div>
