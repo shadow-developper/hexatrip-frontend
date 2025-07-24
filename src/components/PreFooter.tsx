@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, X, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter , Youtube } from "lucide-react";
 
 const PreFooter = () => {
   return (
@@ -10,7 +10,7 @@ const PreFooter = () => {
       <div className="flex gap-8 items-center">
         <Facebook size="35" className="hover-btn"/>
         <Linkedin size="35" className="hover-btn"/>
-        <X size="35" className="hover-btn"/>
+        <Twitter size="35" className="hover-btn"/>
         <Instagram size="35" className="hover-btn"/>
         <Youtube size="35" className="hover-btn"/>
       </div>
