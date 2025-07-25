@@ -5,5 +5,11 @@ export type Link = {
 
 export type HotlineDataType = { 
 	src: string,
-	text: string
+	text: string,
 };
+
+export type RegionsCarouselDataType = {
+	name: string,
+	photo: string,
+	region: number,
+}

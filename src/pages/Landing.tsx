@@ -1,7 +1,9 @@
+import { RegionsCarousel } from "@/components";
+
 const Landing = () => {
-  return (
-	<div>Landing</div>
-  )
+  return <>
+  <RegionsCarousel />
+  </>
 }
 
 export default Landing;
